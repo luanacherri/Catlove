@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TopoComponent } from './topo/topo.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import { MeiositeComponent } from './meiosite/meiosite.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopoComponent,
+    RodapeComponent,
+    MeiositeComponent
   ],
   imports: [
     BrowserModule
