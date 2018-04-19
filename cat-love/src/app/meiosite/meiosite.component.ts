@@ -12,11 +12,20 @@ export class MeiositeComponent implements OnInit {
     "Card 2" ];
 
     mostrarCard: boolean = true;
-    cardUnico: boolean = false;
+    
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public esconderCard(){
+    this.mostrarCard = false;
+
+  }
+
+  public showCard(){
+    this.mostrarCard = true;
   }
 
 }

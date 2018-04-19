@@ -1,19 +1,27 @@
+<div class="container">
+  
 <div class="card" style="width: 18rem;" *ngIf="mostrarCard; else cardUnico">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+    <div class="col-md-12"> 
+    <img class="card-img-top" src="../../assets/fotos/mario.jpg" alt="Bonecos Super Mario" >
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button (click)="cardUnico()"type="button" class="btn btn-dark">Veja mais</button>
+      <h5 class="card-title">Bonecos Super Mario</h5>
+      <p class="card-text">Bonecos Super Mario foram feitos artesanalmente em feltro. Cada boneco possui 25cm de altura. Peça já a sua fofura por aqui!</p>
+      <button (click)="esconderCard()"type="button" class="btn btn-dark">Solicitar</button>
     </div>
   </div>
+</div>
+</div>
 
-  <ng-template #cardUnico>
-      <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button (click)="mostrarCard()"type="button" class="btn btn-dark">Voltar</button>
-          </div>
+<ng-template #cardUnico>
+  <form>
+      <div class="form-group" >
+          <label for="exampleFormControlTextarea1">Envie seu pedido de fofura</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <p></p>
+          <button (click)="showCard()"type="button" class="btn btn-dark">Voltar</button>
+          <button (click)="limparForm()"type="button" class="btn btn-dark">Enviar</button>
         </div>
-    </ng-template>
+  </form>  
+</ng-template>
+
+
