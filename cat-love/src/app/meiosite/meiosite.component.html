@@ -1,13 +1,19 @@
-<div class="container">
-  <div class="row">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+<div class="card" style="width: 18rem;" *ngIf="mostrarCard; else cardUnico">
+    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button (click)="cardUnico()"type="button" class="btn btn-dark">Veja mais</button>
     </div>
   </div>
-</div>
+
+  <ng-template #cardUnico>
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button (click)="mostrarCard()"type="button" class="btn btn-dark">Voltar</button>
+          </div>
+        </div>
+    </ng-template>

@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeiositeComponent implements OnInit {
 
-  cads: string[] = [
+  cards: string[] = [
     "Card 1",
     "Card 2" ];
-    mostrarcard: boolean = true;
+
+    mostrarCard: boolean = true;
+    cardUnico: boolean = false;
 
   constructor() { }
 
