@@ -12,7 +12,7 @@ export class MeiositeComponent implements OnInit {
     "Card 2" ];
 
     mostrarCard: boolean = true;
-    
+    alerta: string;
 
   constructor() { }
 
@@ -27,5 +27,8 @@ export class MeiositeComponent implements OnInit {
   public showCard(){
     this.mostrarCard = true;
   }
-
+  
+  public alertaMsg(){
+    alert('Pedido enviado com sucesso!');
+  }
 }

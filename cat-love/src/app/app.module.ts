@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { MeiositeComponent } from './meiosite/meiosite.component';
+import { FotosComponent } from './fotos/fotos.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { MeiositeComponent } from './meiosite/meiosite.component';
     AppComponent,
     TopoComponent,
     RodapeComponent,
-    MeiositeComponent
+    MeiositeComponent,
+    FotosComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule

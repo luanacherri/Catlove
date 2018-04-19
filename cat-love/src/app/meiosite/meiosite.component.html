@@ -1,5 +1,11 @@
 <div class="container">
-  
+    <nav class="navbar navbar-dark bg-dark">
+        
+          <a class="navbar-brand" href="../meiosite/meiosite.component.html">Fofuras</a>
+          <a class="navbar-brand" href="../fotos/fotos.component.html">Fotos</a>
+          <a class="navbar-brand" href="../sobre/sobre.component.html">Sobre</a>
+        
+      </nav>  
 <div class="card" style="width: 18rem;" *ngIf="mostrarCard; else cardUnico">
     <div class="col-md-12"> 
     <img class="card-img-top" src="../../assets/fotos/mario.jpg" alt="Bonecos Super Mario" >
@@ -7,6 +13,7 @@
       <h5 class="card-title">Bonecos Super Mario</h5>
       <p class="card-text">Bonecos Super Mario foram feitos artesanalmente em feltro. Cada boneco possui 25cm de altura. Peça já a sua fofura por aqui!</p>
       <button (click)="esconderCard()"type="button" class="btn btn-dark">Solicitar</button>
+     
     </div>
   </div>
 </div>
@@ -19,7 +26,7 @@
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           <p></p>
           <button (click)="showCard()"type="button" class="btn btn-dark">Voltar</button>
-          <button (click)="limparForm()"type="button" class="btn btn-dark">Enviar</button>
+          <button (click)="alertaMsg()"type="button" class="btn btn-dark">Enviar</button>
         </div>
   </form>  
 </ng-template>
